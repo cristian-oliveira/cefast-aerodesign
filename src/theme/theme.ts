@@ -1,26 +1,29 @@
 import { Theme, createTheme } from "@mui/material";
+import colors from './colors';
 
-const factoryMartinsMui = (): Theme =>
+const factoryMui = (): Theme =>
     createTheme({
         palette: {
-            background: { default: backgroundColor, paper: surface },
-            error: { main: error },
-            success: { main: success },
+            background: { default: colors.black, paper: colors.white },
+            error: { main: colors.defaultRed },
+            success: { main: colors.defaultGreen },
             primary: {
-                main: currentTheme.primary,
-                dark: currentTheme.primaryRange[300],
-                ...currentTheme.primaryRange,
+                main: colors.defaultOrange,
+                dark: colors.orangeRange[300],
+                ...colors.orangeRange,
             },
             secondary: {
-                main: currentTheme.secondary,
-                dark: currentTheme.secondaryRange[300],
-                ...currentTheme.secondaryRange,
+                main: colors.defaultBlackFriday,
+                dark: colors.blackFridayRange[600],
+                ...colors.blackFridayRange,
             },
             text: {
-                primary: currentTheme.textColor,
-                disabled: disable,
-                secondary: textMedium,
-                ...currentTheme.secondaryRange,
+                primary: colors.black,
+                disabled: colors.defaultGray,
+                secondary: colors.defaultGray,
+                ...colors.blackFridayRange,
             },
         },
     });
+
+export { factoryMui }

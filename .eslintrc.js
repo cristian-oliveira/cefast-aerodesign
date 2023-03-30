@@ -34,7 +34,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/no-empty-function': 1,
-        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-explicit-any': 'off',
         'no-console': 1,
         'react-hooks/exhaustive-deps': 'error',
         'no-use-before-define': 'off',

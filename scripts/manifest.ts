@@ -1,23 +1,18 @@
 /* eslint-disable no-console */
-import loadCurrentTheme from '../src/theme/currentTheme';
 import { join, resolve } from 'path';
-import {
-  PLAY_STORE_APP_LINK,
-  APPLE_STORE_APP_LINK,
-  DEFAULT_PAGE_TITLE,
-} from '../src/services/Constants';
 import { writeFileSync } from 'fs';
+import { factoryMui } from '../src/theme/theme';
 
-const theme = loadCurrentTheme();
+const theme = factoryMui();
 
 const generateManifest = async () => {
   const manifest = {
-    name: DEFAULT_PAGE_TITLE,
-    short_name: 'Martins Atacado',
+    name: 'CEFAST AERODESIGN: A maior equipe de competição de aeronaves do Brasil',
+    short_name: 'Cefast AeroDesing',
     start_url: '/',
     display: 'fullscreen',
-    background_color: theme.background,
-    theme_color: theme.primary,
+    background_color: '#ffff',
+    theme_color: '#000000',
     orientation: 'portrait',
     icons: [
       {
@@ -30,15 +25,6 @@ const generateManifest = async () => {
       {
         platform: 'web',
         url: process.env.NEXT_PUBLIC_URL,
-      },
-      {
-        platform: 'play',
-        url: PLAY_STORE_APP_LINK,
-        id: 'com.martins_app',
-      },
-      {
-        platform: 'apps',
-        url: APPLE_STORE_APP_LINK,
       },
     ],
   };
