@@ -1,25 +1,31 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+	"name": "Martins Atacado: compre no maior atacado online!",
+	"short_name": "Martins Atacado",
+	"start_url": "/",
+	"display": "fullscreen",
+	"background_color": "#FFFFFF",
+	"theme_color": "#072AD8",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "/images/logo_martins.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		}
+	],
+	"related_applications": [
+		{
+			"platform": "web",
+			"url": "https://portal-dev.martinsatacado.com.br"
+		},
+		{
+			"platform": "play",
+			"url": "https://play.google.com/store/apps/details?id=com.martins_app",
+			"id": "com.martins_app"
+		},
+		{
+			"platform": "apps",
+			"url": "https://apps.apple.com/br/app/martins-atacado-online/id1529162155"
+		}
+	]
 }

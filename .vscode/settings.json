@@ -1,0 +1,32 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "files.watcherExclude": {
+    "/.git/objects/": true,
+    "/.git/subtree-cache/": true,
+    "/node_modules/*/": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.rulers": [
+    100
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.fixAll.prettier": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.language": "en, pt, pt_BR",
+  "cSpell.ignorePaths": [
+    ".husky",
+    "@types",
+    "coverage",
+    ".vscode",
+    "node_modules",
+    ".git",
+    "yarn.lock"
+  ],
+  "typescript.enablePromptUseWorkspaceTsdk": true,  
+}
