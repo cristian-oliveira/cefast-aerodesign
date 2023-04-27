@@ -1,7 +1,5 @@
 import React from "react";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import { css } from "@emotion/css";
-import colors from "../../theme/colors";
 import Menu from "./menu";
 
 const Header = () => {
@@ -10,11 +8,10 @@ const Header = () => {
       <Grid item>
         <img
           src={"/images/logo.svg"}
-          className={css`
+          className={
             padding: 32px;
             font-size: 24px;
-            color: ${colors.white};
-          `}
+         }
           alt="logo"
         />
       </Grid>

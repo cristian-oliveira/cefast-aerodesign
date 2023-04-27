@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import { css } from "@emotion/css";
 
 const MENU_LIST = ["LOREM", "LOREM", "LOREM", "LOREM"];
 
